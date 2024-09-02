@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { ThemeContextProvider } from "./context/ThemeContext";
+import ThemeProvider from "./providers/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,14 +18,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="conteiner">
-          <div className="max-w-7xl mx-auto px-20 xl:max-w-5xl lg:max-w-3xl lg:px-10 md:max-w-2xl sm:max-w-md">
-            <Navbar />
-              {children}
-            <Footer />
-          </div>
-        </div>
+        <ThemeContextProvider>
+          <ThemeProvider>
+            <div className="conteiner">
+              <div
+                className="max-w-md mx-auto px-5 sm:max-w-3xl md:max-w-4xl lg:max-w-5xl lg:px-10 xl:max-w-6xl"
+              >
+                <Navbar />
+                {children}
+                <Footer />
+              </div>
+            </div>
+          </ThemeProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );
-}
+};
