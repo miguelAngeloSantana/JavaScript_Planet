@@ -22,7 +22,7 @@ export default function RootLayout({
           <ThemeProvider>
             <div className="conteiner">
               <div
-                className="max-w-md mx-auto px-5 sm:max-w-3xl md:max-w-4xl lg:max-w-5xl lg:px-10 xl:max-w-6xl"
+                className="max-w-3x1 mx-auto px-5 md:max-w-2xl lg:max-w-4xl lg:px-10 xl:max-w-6xl"
               >
                 <Navbar />
                 {children}
