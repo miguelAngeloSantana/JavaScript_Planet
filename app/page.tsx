@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Categories />
-      <div>
+      <div className="flex gap-12">
         <CardPost />
         <Menu />
       </div>

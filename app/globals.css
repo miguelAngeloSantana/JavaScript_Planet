@@ -16,11 +16,14 @@ body {
 .dark {
   --bg: #0f172a;
   --text: #ddd;
+  --blogText: #a6a6a6;
 }
 
 .light {
   --bg: white;
   --text: black;
+  --blogText: #1f273a;
+
 }
 
 .conteiner {
