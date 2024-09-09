@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 
-import "../globals.css";
+import "../app/globals.css";
 
 export default function LoginLink() {
 
