@@ -15,7 +15,10 @@ export default function LoginLink() {
       { status === "notauthenticated"? (
           <Link href={"/login"} className='hidden sm:flex'>Login</Link>
       ) : (
-          <span>Logaoudo</span>
+          <>
+            <Link href="/">write</Link>
+            <span>Logout</span>
+          </>
       )}
 
       <div 
@@ -28,14 +31,17 @@ export default function LoginLink() {
       </div>
 
         { open && (
-          <div className='absolute top-[100px] left-0 h-[calc(100vh-100px)] w-full flex flex-col items-center justify-center gap-12 bg-[--bg]'>
+          <div className='z-10 absolute top-[100px] left-0 h-[calc(100vh-100px)] w-full flex flex-col items-center justify-center gap-12 bg-[--bg]'>
             <Link href="/">HomePage</Link>
             <Link href="/">About</Link>
             <Link href="/">Contact</Link>
             { status === "notauthenticated"? (
               <Link href={"/login"}>Login</Link>
             ) : (
-                <span>Logaoudo</span>
+                <>
+                  <Link href="/">write</Link>
+                  <span>Logout</span>
+                </>
             )}
           </div>
         )}

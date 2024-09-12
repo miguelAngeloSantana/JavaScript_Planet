@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="pt-14 pb-7 flex-col items-center justify-between md:flex md:flex-row">
+    <div className="mt-2 md:mt-11 pt-2 pb-7 border-t-2 flex-col items-center justify-between md:flex md:flex-row">
       <div className="flex-col flex-[2] gap-3 mb-7 text-center md:text-left md:mb-0">
         <h1 className='text-center font-bold text-xl mb-5 lg:text-lg md:text-left md:text-2xl'>
           JavaScript Planet
